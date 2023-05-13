@@ -11,15 +11,16 @@ import Home from "./pages/Home";
 import Work from "./pages/Work";
 import "swiper/css";
 import "swiper/css/effect-cards";
+import Preloader from "./components/Preloader/Preloader";
 const App = () => {
-  const { openBtn } = useGlobalContext();
-  const { ModalBtnCheck } = useGlobalContext();
+  const { openBtn, ModalBtnCheck, preLoaderShow } = useGlobalContext();
   const { pathname } = useLocation();
   useEffect(() => {
     ModalBtnCheck(pathname);
   }, [pathname]);
   return (
     <>
+      {/* {preLoaderShow && <Preloader />} */}
       {openBtn && <ModalBtn />}
       {openBtn && <Modal />}
       <Cursor />

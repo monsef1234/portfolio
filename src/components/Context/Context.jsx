@@ -11,7 +11,7 @@ const AppProvider = ({ children }) => {
   const [heightModal, setHeightModal] = useState("");
   const [skip, setSkip] = useState(false);
   const [counter, setCounter] = useState(5);
-
+  const [preLoaderShow, setPreLoaderShow] = useState(true);
   useEffect(() => {
     const unsub = setInterval(() => {
       setCounter((i) => i - 1);
@@ -91,6 +91,8 @@ const AppProvider = ({ children }) => {
         skipContactHandler,
         counter,
         skip,
+        preLoaderShow,
+        setPreLoaderShow,
       }}
     >
       {children}

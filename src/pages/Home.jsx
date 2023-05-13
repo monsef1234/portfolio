@@ -69,7 +69,7 @@ const Home = () => {
               <div className="about_wrapper">
                 <Typewriter
                   options={{
-                    delay: 40,
+                    delay: 100,
                   }}
                   onInit={(typewriter) => {
                     typewriter
