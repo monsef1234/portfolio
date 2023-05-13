@@ -1,0 +1,59 @@
+@import "./variables/Variables.scss";
+
+html {
+  overflow-x: hidden;
+}
+::-moz-selection {
+  color: $bg_color3;
+  background: $bg_color4;
+}
+
+::selection {
+  color: $bg_color3;
+  background: $bg_color4;
+}
+body {
+  position: relative;
+  font-family: $font_family;
+  background-color: $bg_color3;
+  color: $bg_color2;
+  line-height: 1.6;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.Typewriter__cursor {
+  font-family: $font_family;
+}
+.skip {
+  color: $bg_color4;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: $font_family2;
+  font-weight: bold;
+  text-align: right;
+  cursor: pointer;
+  position: relative;
+}
+strong {
+  color: $bg_color4;
+}
+small {
+  display: block;
+  font-size: .6rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-family: $font_family2;
+  font-style: italic;
+  text-decoration: underline;
+  position: relative;
+  width: fit-content;
+  margin: 1rem auto 0;
+}

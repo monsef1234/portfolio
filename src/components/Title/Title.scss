@@ -1,0 +1,14 @@
+@import "../../variables/Variables.scss";
+h1 {
+    display: flex;
+    align-items: center;
+    font-family: $font_family2;
+    gap: 0.5rem;
+    width: fit-content;
+    color: $bg_color2;
+    .num {
+      color: $bg_color4;
+      font-size: 2rem;
+      margin-right: .5rem;
+    }
+  }

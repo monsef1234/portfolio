@@ -1,0 +1,67 @@
+@import "../../variables/Variables.scss";
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  background-color: #efefefd8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateX(100%);
+  &.open {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .links {
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      @include menu;
+    }
+  }
+}
+.modal_btn {
+  rotate: 180deg;
+  position: fixed;
+  top: 50%;
+  right: 1rem;
+  transform: translate(-50%);
+  font-size: 1.5rem;
+  display: flex;
+  z-index: 10;
+  transition: 0.5s;
+  cursor: pointer;
+  animation: modalAnimation 2s linear infinite;
+  &.active {
+    rotate: 0deg;
+    right: 0rem;
+    animation: none !important;
+  }
+  // Button Animation
+  @keyframes modalAnimation {
+    0% {
+      right: 1rem;
+    }
+    20% {
+      right: 1.4rem;
+    }
+    40% {
+      right: 1rem;
+    }
+    60% {
+      right: 1.4rem;
+    }
+    80% {
+      right: 1rem;
+    }
+    100% {
+      right: 1rem;
+    }
+  }
+}

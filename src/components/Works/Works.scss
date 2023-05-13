@@ -1,0 +1,63 @@
+@import "../../variables/Variables.scss";
+.work_box {
+  background-color: $bg_color5;
+  box-shadow: 0 0px 3px $bg_color2;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  transition: 0.5s;
+  transform: translateY(0);
+
+  .work_top {
+    display: flex;
+    color: $bg_color2;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    .folder {
+      font-size: 2.5rem;
+      color: $bg_color4;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+  .work_info {
+    h2 {
+      font-family: $font_family2;
+      transition: 0.5s;
+    }
+    color: $bg_color2;
+    .desc {
+      color: $bg_color2;
+      font-weight: lighter;
+    }
+  }
+  .work_bottom {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+
+    span {
+      font-weight: lighter;
+      font-size: 0.7rem;
+      letter-spacing: -1px;
+      color: $bg_color6;
+      margin-right: 1rem;
+      text-transform: capitalize;
+      font-family: $font_family2;
+      cursor: default;
+    }
+  }
+  &:hover {
+    .work_info {
+      h2 {
+        color: $bg_color4;
+      }
+    }
+  }
+}

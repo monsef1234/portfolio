@@ -1,0 +1,16 @@
+@import "../../variables/Variables.scss";
+.section_container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  @include breakpoint("medium") {
+    width: 1100px;
+  }
+  @include breakpoint("small") {
+    width: 900px;
+  }
+  @include breakpoint("mobile") {
+    width: 700px;
+  }
+}
