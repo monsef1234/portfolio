@@ -7,7 +7,6 @@ const Cursor = () => {
   useEffect(() => {
     document.addEventListener("mousemove", (eo) => {
       const { clientX, clientY } = eo;
-      console.log(ref.current);
       const mouseX = clientX - ref.current.clientWidth / 2;
       const mouseY = clientY - ref.current.clientHeight / 2;
       ref.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;

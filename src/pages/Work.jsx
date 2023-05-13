@@ -41,7 +41,7 @@ const Work = () => {
     <Helmet title={"works"}>
       <div className="work_container">
         <Container>
-          <Title title={"Some Thing I've Built"} />
+          <Title title={"Some Things I've Built"} />
           <div className="works_wrapper">
             <motion.div
               className="works"

@@ -15,7 +15,7 @@ const menuVariant = {
   visible: {
     opacity: 1,
     transition: {
-      delay: 18,
+      delay: 15,
       when: "beforeChildren",
       staggerChildren: 0.2,
     },
@@ -69,20 +69,15 @@ const Home = () => {
               <div className="about_wrapper">
                 <Typewriter
                   options={{
-                    delay: 100,
+                    delay: 40,
                   }}
                   onInit={(typewriter) => {
                     typewriter
                       .typeString("<span class='hello'>Hello! 😃</span> <br />")
                       .pauseFor(1000)
                       .typeString(
-                        `My name is <strong class='name'>Bouras Moncef Sofiane</strong>, I am <strong>${age}</strong> years old, I study <strong>Computer Science</strong> in <strong>Batna, Algeria</strong>, I started coding back in <strong>2020</strong> when my teacher gave us a homework to do talking about <strong>making a WEBSITE</strong>, That's where my journey started... <br />`
+                        `My name is <strong class='name'>Bouras Moncef Sofiane</strong>, I am <strong>${age}</strong> years old, I study <strong>Computer Science</strong> in <strong>Batna, Algeria</strong>, I started coding back in <strong>2020</strong> when my teacher gave us a homework to do talking about <strong>making a WEBSITE</strong>, That's where my journey started...`
                       )
-                      .pauseFor(1500)
-                      .typeString(
-                        `Start discover my Portfolio <strong>don't be SHY!!</strong>.`
-                      )
-
                       .start();
                   }}
                 />
