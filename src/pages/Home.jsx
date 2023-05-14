@@ -119,7 +119,6 @@ const Home = () => {
                   <strong>2020</strong> when my teacher gave us a homework to do
                   talking about <strong>making a WEBSITE</strong>, That's where
                   my journey started... <br />
-                  Start discover my Portfolio <strong>don't be SHY!!</strong>.
                 </p>
               </div>
               <div className="menu_container">
