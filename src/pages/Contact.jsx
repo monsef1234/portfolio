@@ -96,6 +96,11 @@ const Contact = () => {
                     </motion.div>
                   </div>
                 )}
+                {!skip && (
+                  <p className="skip" onClick={skipContactHandler}>
+                    Skip... {counter}
+                  </p>
+                )}
               </div>
             </>
           )}
@@ -131,11 +136,6 @@ const Contact = () => {
                 </div>
               </div>
             </>
-          )}
-          {!skip && (
-            <p className="skip" onClick={skipContactHandler}>
-              Skip... {counter}
-            </p>
           )}
         </Container>
       </div>
